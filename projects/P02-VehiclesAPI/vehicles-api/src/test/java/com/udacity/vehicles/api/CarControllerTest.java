@@ -121,16 +121,20 @@ public class CarControllerTest {
          *   a vehicle by ID. This should utilize the car from `getCar()` below.
          */
 
+        setup(); // populate data
+
         Car car = getCar();
+        System.out.println(car.getId()); //This is null
+
         mvc.perform(
-                get(new URI("/cars"))
+                get(new URI("/cars/" + 1))
                         .content(json.write(car).getJson())
                         .contentType(MediaType.APPLICATION_JSON)
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
                 .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
                 .andExpect(content().json("{}"));
-        verify(carService,times(1)).findById(car.getId());
+        verify(carService,times(1)).findById(1L);
     }
 
     /**
@@ -144,9 +148,10 @@ public class CarControllerTest {
          *   when the `delete` method is called from the Car Controller. This
          *   should utilize the car from `getCar()` below.
          */
+        setup(); // populate data
 
         Car car = getCar();
-        mvc.perform(delete("/cars/"+car.getId().toString()).param("id",car.getId().toString())
+        mvc.perform(delete("/cars/" + 1).param("id", "1")
                 .contentType(MediaType.APPLICATION_JSON)
                 .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isNoContent());
