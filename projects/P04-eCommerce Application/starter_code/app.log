@@ -1,0 +1,27 @@
+2021-01-25 00:19:59,714 INFO com.example.demo.DeJansApplicationTests [main] Starting DeJansApplicationTests on adam-optiplex7010 with PID 19859 (started by adamd in /home/adamd/Documents/workspace/Udacity/JDND/projects/P04-eCommerce Application/starter_code)
+2021-01-25 00:19:59,715 DEBUG com.example.demo.DeJansApplicationTests [main] Running with Spring Boot v2.1.5.RELEASE, Spring v5.1.7.RELEASE
+2021-01-25 00:19:59,716 INFO com.example.demo.DeJansApplicationTests [main] No active profile set, falling back to default profiles: default
+2021-01-25 00:20:01,406 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Starting...
+2021-01-25 00:20:01,537 INFO com.zaxxer.hikari.HikariDataSource [main] HikariPool-1 - Start completed.
+2021-01-25 00:20:01,601 INFO org.hibernate.jpa.internal.util.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-01-25 00:20:01,648 INFO org.hibernate.Version [main] HHH000412: Hibernate Core {5.3.10.Final}
+2021-01-25 00:20:01,649 INFO org.hibernate.cfg.Environment [main] HHH000206: hibernate.properties not found
+2021-01-25 00:20:01,784 INFO org.hibernate.annotations.common.Version [main] HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-01-25 00:20:01,883 INFO org.hibernate.dialect.Dialect [main] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-01-25 00:20:03,982 INFO com.example.demo.DeJansApplicationTests [main] Started DeJansApplicationTests in 4.607 seconds (JVM running for 5.865)
+2021-01-25 00:20:04,271 INFO com.example.demo.controllers.UserController [main] Submit request fail.
+2021-01-25 00:20:04,271 ERROR com.example.demo.controllers.UserController [main] Submit order request fail: user == null
+2021-01-25 00:20:04,272 INFO com.example.demo.controllers.UserController [main] Submit request fail.
+2021-01-25 00:20:04,272 ERROR com.example.demo.controllers.UserController [main] Submit order request fail: user == null
+2021-01-25 00:20:04,273 INFO com.example.demo.controllers.UserController [main] History request successful
+2021-01-25 00:20:04,274 INFO com.example.demo.controllers.UserController [main] Order request successful
+2021-01-25 00:20:04,289 INFO com.example.demo.controllers.UserController [main] CreateUser request success.
+2021-01-25 00:20:04,290 INFO com.example.demo.controllers.UserController [main] User name set with test
+2021-01-25 00:20:04,292 INFO com.example.demo.controllers.UserController [main] CreateUser request success.
+2021-01-25 00:20:04,292 INFO com.example.demo.controllers.UserController [main] User name set with test
+2021-01-25 00:20:04,292 INFO com.example.demo.controllers.UserController [main] CreateUser request fail.
+2021-01-25 00:20:04,292 ERROR com.example.demo.controllers.UserController [main] Error with user password. Cannot create user test
+2021-01-25 00:20:04,306 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown initiated...
+2021-01-25 00:20:04,313 INFO com.zaxxer.hikari.HikariDataSource [Thread-2] HikariPool-1 - Shutdown completed.
